@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CardLaptopComponent } from './card-laptop.component';
+import { BaitapCardComponent } from './baitap-card.component';
 
-describe('CardLaptopComponent', () => {
-  let component: CardLaptopComponent;
-  let fixture: ComponentFixture<CardLaptopComponent>;
+describe('BaitapCardComponent', () => {
+  let component: BaitapCardComponent;
+  let fixture: ComponentFixture<BaitapCardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CardLaptopComponent ]
+      declarations: [ BaitapCardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CardLaptopComponent);
+    fixture = TestBed.createComponent(BaitapCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
