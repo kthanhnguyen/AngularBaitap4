@@ -7,11 +7,12 @@ import { BaitapSmartphoneComponent } from './baitap-smartphone/baitap-smartphone
 import { BaitapLaptopComponent } from './baitap-laptop/baitap-laptop.component';
 import { BaitapPromotionComponent } from './baitap-promotion/baitap-promotion.component';
 import { BaitapCardComponent } from './baitap-card/baitap-card.component';
+import { BaitapModalComponent } from './baitap-modal/baitap-modal.component';
 
 
 
 @NgModule({
-  declarations: [BaitapComponent, BaitapHeaderComponent, BaitapCarouselComponent, BaitapSmartphoneComponent, BaitapLaptopComponent, BaitapPromotionComponent, BaitapCardComponent],
+  declarations: [BaitapComponent, BaitapHeaderComponent, BaitapCarouselComponent, BaitapSmartphoneComponent, BaitapLaptopComponent, BaitapPromotionComponent, BaitapCardComponent, BaitapModalComponent],
   exports: [BaitapComponent],
   imports: [
     CommonModule
