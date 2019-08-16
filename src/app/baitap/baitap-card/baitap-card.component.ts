@@ -7,15 +7,20 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class BaitapCardComponent implements OnInit {
   @Input() productItem;
-  @Output() eventProduct = new EventEmitter();
+  @Output() emitItem = new EventEmitter();
+
+  isHide:boolean = true;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-
   detailProduct(){
-    this.eventProduct.emit(this.productItem);
+    this.emitItem.emit(this.productItem);
+  }
+
+  hideDes() {
+    this.isHide = !this.isHide;
   }
 }

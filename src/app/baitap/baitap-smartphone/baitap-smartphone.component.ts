@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-baitap-smartphone',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./baitap-smartphone.component.scss']
 })
 export class BaitapSmartphoneComponent implements OnInit {
+  @Output() emitList = new EventEmitter;
 
   arrSmartPhone:Array<any> = [
     {name: 'iPhone X', img:'sp_iphoneX.png', des: 'iPhone X features a new all-screen design. Face ID, which makes your face your password', price: '1000'},
@@ -17,6 +18,10 @@ export class BaitapSmartphoneComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  getItem(productItem) {
+    this.emitList.emit(productItem);
   }
 
 }

@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./baitap.component.scss']
 })
 export class BaitapComponent implements OnInit {
+  productItem: any;
+
+  getList(productItem) {
+    this.productItem = productItem;
+  }
 
   constructor() { }
 

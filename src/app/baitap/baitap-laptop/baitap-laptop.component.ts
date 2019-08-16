@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-baitap-laptop',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./baitap-laptop.component.scss']
 })
 export class BaitapLaptopComponent implements OnInit {
+  @Output() emitList = new EventEmitter;
 
   arrLapTop:Array<any> = [
     {name: 'MACBOOK', img:'lt_macbook.png', des: 'The MacBook is a brand of notebook computers manufactured by Apple Inc', price: '1000'},
@@ -18,6 +19,10 @@ export class BaitapLaptopComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  getItem(productItem) {
+    this.emitList.emit(productItem);
   }
 
 }

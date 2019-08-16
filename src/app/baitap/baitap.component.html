@@ -1,7 +1,7 @@
 <app-baitap-header></app-baitap-header>
 <app-baitap-carousel></app-baitap-carousel>
-<app-baitap-smartphone></app-baitap-smartphone>
-<app-baitap-laptop></app-baitap-laptop>
+<app-baitap-smartphone (emitList)="getList($event)"></app-baitap-smartphone>
+<app-baitap-laptop (emitList)="getList($event)"></app-baitap-laptop>
 <app-baitap-promotion></app-baitap-promotion>
 
-<app-baitap-modal></app-baitap-modal>
+<app-baitap-modal [productItem]="productItem"></app-baitap-modal>
